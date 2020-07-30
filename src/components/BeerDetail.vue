@@ -27,14 +27,8 @@ export default {
                 return hop.name
             })
 
-            console.log('malts :>> ', malts);
-            console.log('hops :>> ', hops);
-
             const uniqueMalts = malts.filter((malt, index) => malts.indexOf(malt) === index)
             const uniqueHops = hops.filter((hop, index) => hops.indexOf(hop) === index)
-
-            console.log('uniqueMalts :>> ', uniqueMalts);
-            console.log('uniqueHops :>> ', uniqueHops);
 
             const yeast = ingredientsObject.yeast
 
