@@ -32,6 +32,8 @@ export default {
   eventBus.$on('selected-beer', (beer) => {this.selectedBeer = beer})
 
   eventBus.$on('favourites', (beer) => {this.favourites.push(beer)})
+
+  eventBus.$on('beer', (beer) => {this.favourites.splice(this.favourites.indexOf(beer), 1)} )
   },
 
   components: {
